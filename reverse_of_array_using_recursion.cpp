@@ -13,8 +13,12 @@ void reverse_using_recusion(int l, int arr[], int r ){
    if (l>=r) return;
    swap(arr[l], arr[r]);
    reverse_using_recusion(l+1, arr, r-1);
+}
 
-
+void reverse_with_one_variable(int i, int arr[], int n){
+    if (i>= n/2) return;
+    swap(arr[i],arr[n-i-1]);
+    reverse_with_one_variable(i+1, arr, n);
 }
 
 int main(){
@@ -22,6 +26,7 @@ int main(){
     int r = sizeof(arr)/sizeof(arr[0]) - 1;
     // reverse_of_array_using_for_loop(0,arr, r);
     // reverse_using_recusion (0, arr, r);
+    // reverse_with_one_variable(0, arr, r+1);
     cout << "Reversed array: ";
     for (int i=0; i <= r; i++){
         cout << arr[i] << " ";
