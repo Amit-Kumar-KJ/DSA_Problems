@@ -1,0 +1,24 @@
+# --- C++ build artifacts ---
+*.exe
+*.out
+*.o
+*.obj
+*.pdb
+*.ilk
+
+# --- Build & binary dirs ---
+/build/
+/bin/
+/debug/
+/Release/
+/x64/
+
+# --- Editor/IDE stuff ---
+.vscode/
+
+# --- OS junk ---
+.DS_Store
+Thumbs.db
+
+# --- Logs ---
+*.log
